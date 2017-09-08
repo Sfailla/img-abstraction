@@ -1,5 +1,4 @@
 const express = require('express');
-const path = require('path');
 const fs = require('fs');
 const Router = express.Router();
 
@@ -26,8 +25,10 @@ Router.get('/latest', (req, res) => {
         })
 });
 
-Router.get('/search/:q', (req, res) => {  
-    imgur.getImage(req.params.q, req.query.offset)
+Router.get('/search/:q', (req, res) => {
+    let search = req.params.q;
+    let offset = req.query.offset;  
+    imgur.getImage(search, offset)
         .then(ans => {
             new History({ term: req.params.q }).save();
             res.json(ans);
