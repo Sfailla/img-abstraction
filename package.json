@@ -1,0 +1,26 @@
+{
+  "name": "img-abstract",
+  "version": "1.0.0",
+  "description": "image abstraction layer microservice",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "'wwww.github.com/Stevo99/??'"
+  },
+  "author": "steve failla",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.10",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "dotenv": "^4.0.0",
+    "nodemon": "^1.11.0"
+  }
+}
